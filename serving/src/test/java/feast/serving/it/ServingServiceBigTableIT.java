@@ -384,7 +384,7 @@ public class ServingServiceBigTableIT extends BaseAuthBigtableIT {
   }
 
   @TestConfiguration
-  public static class TestConfig extends ServingServiceConfigV2 {
+  public static class TestConfig {
     @Bean
     public BigtableDataClient bigtableClient() throws IOException {
       return BigtableDataClient.create(
